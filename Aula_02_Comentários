@@ -1,0 +1,19 @@
+// Segunda aula explicando a utilização do \n e comentário
+
+/*
+	Esse tipo de comentário
+	é pra ser utilizado em
+	mais de uma linha.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main ()
+{
+	printf("I have a dream with you.\n");
+	printf("We be together far far time.\n\n");
+	
+	system("pause");
+	return 0;
+}
