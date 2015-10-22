@@ -1,0 +1,13 @@
+// Primeira aula explicando a utilização do printf
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main ()
+{
+	printf("I have a dream with you.\n");
+	printf("We be together far far time.");
+	
+	system("pause");
+	return 0;
+}
