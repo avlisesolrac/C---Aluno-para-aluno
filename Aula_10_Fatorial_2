@@ -1,0 +1,20 @@
+//Como Calcular o Fatorial de Um Número Qualquer
+// Ex.: 5! = 5*4*3*2*1 = 120
+
+# include <stdio.h>
+
+int main ()
+{
+    int Num, Sum = 1;
+
+    printf("Digite o valor do fatorial: ");
+    scanf("%i", &Num);
+
+    for( ; Num >= 1; --Num){
+        Sum *= Num;
+    }
+
+    printf("O valor do fatorial eh: %i\n\n", Sum);
+
+    return 0;
+}
