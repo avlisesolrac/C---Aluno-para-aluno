@@ -1,0 +1,14 @@
+// Conceito e criação de variáveis
+
+# include <stdio.h>
+
+int main ()
+{
+	int minhaIdade;
+	
+	minhaIdade = 22;
+	
+	printf("Minha idade eh: %i\n\n", minhaIdade);
+	
+	return 0;
+}
