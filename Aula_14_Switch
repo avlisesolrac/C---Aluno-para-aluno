@@ -1,0 +1,32 @@
+# include <stdio.h>
+
+int main ()
+{
+    int escolha;
+
+    printf("Insira um numero de 1 ate 5:");
+    scanf("%i", &escolha);
+
+    switch (escolha){
+        case 1:
+            printf("Primeiro!\n");
+            break;
+        case 2:
+            printf("Segundo!\n");
+            break;
+        case 3:
+            printf("Terceiro!\n");
+            break;
+        case 4:
+            printf("Quarto!\n");
+            break;
+        case 5:
+            printf("Quinto!\n");
+            break;
+        default:
+            printf("opcao nao valida!\n");
+            break;
+    }
+
+    return 0;
+}
