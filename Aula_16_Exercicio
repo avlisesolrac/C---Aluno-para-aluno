@@ -1,0 +1,28 @@
+# include <stdio.h>
+
+int main ()
+{
+	int Num, Aux;
+
+	printf("Digite um numero qualquer: ");
+	scanf("%i", &Num);
+
+	if(Num >= 0){
+	do{
+		Aux = Num % 10;
+		printf("%i", Aux);
+		Num /= 10;
+	}while(Num != 0);
+	}else if (Num < 0){
+		Num = Num * -1;
+		printf("-");
+		do{
+			Aux = Num % 10;
+			printf("%i", Aux);
+			Num /= 10;
+		}while(Num != 0);
+		
+	}
+
+	return 0;
+}
