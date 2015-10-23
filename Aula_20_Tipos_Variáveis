@@ -1,0 +1,17 @@
+# include <stdio.h>
+
+int main ()
+{
+    /*
+    char variavelChar = 'a';
+    printf("%c\n", variavelChar);
+    scanf("%c", &variavelChar);
+    printf("%c\n", variavelChar);
+    */
+    
+    bool variavelBool = true;
+    printf("%i\n", variavelBool);
+    
+
+    return 0;
+}
