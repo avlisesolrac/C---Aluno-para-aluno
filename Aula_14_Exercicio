@@ -1,0 +1,21 @@
+# include <stdio.h>
+
+int main ()
+{
+	int Num, Num2, Div;
+
+	printf("Digite o primeiro valor: ");
+	scanf("%i", &Num);
+
+	printf("Digite o segundo valor: ");
+	scanf("%i", &Num2);
+
+	Div = Num % Num2;
+
+	if(Div == 0)
+		printf("O numero %i eh divisivel por %i", Num, Num2);
+	else
+		printf("O numero %i nao eh divisivel por %i", Num, Num2);
+
+	return 0;
+}
