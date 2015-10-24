@@ -1,0 +1,16 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+void imprimaMensagem(void);
+
+int main (void) {
+	
+	imprimaMensagem();
+	
+	system("pause");
+	return 0;
+}
+
+void imprimaMensagem(void) {
+	printf("Teste!\n");
+}
