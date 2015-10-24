@@ -1,0 +1,30 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int fatorial (int x);
+
+int main (void) {
+	
+	int numero, resultado;
+	
+	printf("Digite um numero qualquer para\nCalcular o fatorial: ");
+	scanf("%i", &numero);
+	
+	resultado = fatorial (numero);
+	
+	printf("\nO fatorial eh: %i\n", resultado);
+	
+	system("pause");
+	return 0;
+}
+//Função chamando a mesma função dentro dela mesma.
+int fatorial (int x){
+	int resultado;
+	
+	if(x == 0){
+		resultado  = 1;
+	}else{
+		resultado = x * fatorial(x - 1);
+	}
+	return resultado;
+}
