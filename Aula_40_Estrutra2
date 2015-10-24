@@ -1,0 +1,36 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void) {
+	
+	int vetor[5];
+	
+	struct horario {
+		int horas;
+		int minutos;
+		int segundos;
+		float fracao;
+		char letra;
+	};
+	
+	struct horario agora;
+	
+	agora.horas = 15;
+	agora.minutos = 17;
+	agora.segundos = 30;
+	
+	struct horario depois;
+	
+	depois.horas = agora.horas + 10;
+	depois.minutos = agora.minutos + 3;
+	depois.segundos = agora.segundos + 5;
+	depois.fracao = 50.55 / 123;
+	depois.letra = 'C';
+	
+	printf("%i:%i:%i\n\n", depois.horas, depois.minutos, depois.segundos);
+	
+	printf("%f\n\n%c\n\n", depois.fracao, depois.letra);
+	
+	system("pause");
+	return 0;
+}
