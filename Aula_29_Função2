@@ -1,0 +1,21 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+float calcularAreaRetangulo(float x, float y);
+
+int main (void) {
+	
+	float area = calcularAreaRetangulo(10.0, 20.0);
+	
+	printf("O resultado da area eh: %.2f\n\n", area);
+	
+	system("pause");
+	return 0;
+}
+
+float calcularAreaRetangulo(float base, float altura) {
+	
+	float area = base * altura;
+	
+	return area;
+}
