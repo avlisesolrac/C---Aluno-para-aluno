@@ -1,0 +1,28 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int tamanhoString(char string[]);
+
+int main (void){
+	char stringUsuario[20];
+	
+	printf("Digite uma palavra(string):");
+	scanf("%s", stringUsuario);
+	
+	int num = tamanhoString(stringUsuario);
+	
+	printf("Total de caracteres: %i para a palavra: %s\n\n", num, stringUsuario);
+	
+	system("pause");
+	return 0;
+}
+
+int tamanhoString(char string[]){
+	int numCaracteres = 0;
+	
+	while(string[numCaracteres] != '\0'){
+		numCaracteres += 1;	
+	}
+	numCaracteres += 1;
+	return numCaracteres;
+}
