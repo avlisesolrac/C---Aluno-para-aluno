@@ -1,0 +1,18 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	int idade;
+	printf("Sua idade:");
+	scanf("%i", &idade);
+	
+	//			   &&
+	if(idade >= 20 || idade <= 40){
+		printf("Esta dentro do intervalo!\n\n");
+	}else{
+		printf("Nao esta dentro do intervalo!\n\n");
+	}
+	
+	system("pause");
+	return 0;
+}
