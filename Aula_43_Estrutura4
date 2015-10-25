@@ -1,0 +1,18 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void) {
+	
+	struct horario {
+		int horas;
+		int minutos;
+		int segundos;
+	}agora = {14, 16, 28};
+
+	//struct horario agora = {10, 30, 20};
+	
+	printf("%i:%i:%i\n\n", agora.horas, agora.minutos, agora.segundos);
+
+	system("pause");
+	return 0;
+}
