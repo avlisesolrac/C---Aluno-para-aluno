@@ -1,0 +1,16 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+    
+    printf("www.carloseduardo.site11.com\n");
+    
+    /*Função de pause do DOS do windows.
+    
+    system("pause");
+    */
+    
+    getchar();
+    
+    return 0;
+}
