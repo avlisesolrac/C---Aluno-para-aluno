@@ -1,0 +1,19 @@
+# include <stdio.h>
+
+int main(void){
+    
+    int x = 10;
+    
+    printf("%i\n", x);
+    
+    printf("%c\n", x+1);
+    
+    printf("%c\n", x-4);
+    
+    printf("%c\n", x+87);
+    
+    printf("%c\n", 136);
+    
+    getchar();
+    return 0;
+}
