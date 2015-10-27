@@ -1,0 +1,20 @@
+# include <stdio.h>
+
+int main (void){
+    
+    printf("CarlosEduardo\n");
+    
+    //Alertar usuario exemplo: senha errada.
+    
+    printf("\a");
+    
+    printf("Carlos\bEduardo\n");
+    
+    printf("Carlos\tEdu\tardo\n");
+    
+    printf("\"CarlosEduardo\"");
+    
+    getchar();
+    
+    return 0;
+}
