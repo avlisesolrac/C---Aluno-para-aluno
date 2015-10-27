@@ -1,0 +1,26 @@
+# include <stdio.h>
+
+int main (void) {
+    
+    int x = 10;
+    int y = 20;
+    int *ponteiro;
+    ponteiro = &x;
+    
+    *ponteiro = y;
+    
+
+    //Mostra o endereço de memoria do computador    
+    printf("%i %i\n", x, y);
+    
+    
+    //Mostra o conteudo do endereço de memoria que foi apontado
+    printf("%i\n", *ponteiro);
+    
+    //Mostra o endereço de memoria que foi armazenado no ponteiro
+    printf("%i\n", ponteiro);
+    
+    
+    getchar();
+    return 0;
+}
