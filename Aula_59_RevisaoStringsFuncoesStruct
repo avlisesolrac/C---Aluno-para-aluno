@@ -1,0 +1,69 @@
+# include <stdio.h>
+# include <stdbool.h>
+
+struct dicionario{
+       char palavra[20], definicao[50];
+       };
+       
+bool compararStrings(const char palavra1[], const char palavra2[]);
+int procurarStrings(char const struct dicionario lingua[], const char procurar[]);
+
+int main (void) {
+    
+    const int NUMERDODEDEFINICOES = 7;
+    char palavra[20] = {'\0'};
+    
+    int resultadoPesquisa;
+    
+    //Talves digite o numero 7, por estar usando o DEVC++
+    
+    const struct dicionario portugues[NUMERDODEDEFINICOES] = 
+    {{"pao", "Comida de farinha"},
+     {"mortadela", "Comida de carne"},
+     {"feijao", "Comida brasileira"},
+     {"tropero", "Tipo de feijao"},
+     {"queijo", "De minas"},
+     {"macarronada", "Tipico de vo"},
+     {"pizza", "Tipico da Italia"}};
+     
+     printf("Digite uma palavra: ");
+     scanf("%s", palavra)
+     
+     resultadoPesquisa = procurarStrings
+    
+    getchar();
+    return 0;
+}
+
+bool compararStrings(const char palavra1[], const char palavra2[]){
+     int i = 0;
+     
+     while(palavra[i] == palavra[i]
+           && palavra[i] != '\0'
+           && palavra[i] != '\0' ){
+           
+           ++i;
+     }
+     if(palavra[i] == '\0' && palavra2[i] == '\0'){
+        return true;
+     } else {
+        return false;
+     
+}
+
+int procurarStrings(char const struct dicionario lingua[],
+                    const char procurar[],
+                    const int numDePalavras){
+   bool compararStrings(const char palavra1[], const char palavra2[]);
+   
+   int i = 0;
+   
+   while(i < numDePalavras){
+      
+      if(compararStrings(procurar, lingua[i].palavra)) {
+           return i;
+      }else{
+            return -1;
+      }
+   }
+}
