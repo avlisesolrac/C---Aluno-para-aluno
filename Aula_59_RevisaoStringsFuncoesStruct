@@ -1,12 +1,15 @@
 # include <stdio.h>
 # include <stdbool.h>
+# include <stdlib.h>
 
 struct dicionario{
-       char palavra[20], definicao[50];
+       char palavra[20];
+       char definicao[50];
        };
-       
+
 bool compararStrings(const char palavra1[], const char palavra2[]);
-int procurarStrings(char const struct dicionario lingua[], const char procurar[]);
+int procurarStrings(const struct dicionario lingua[],
+                    const char procurar[], const int numDePalavras);
 
 int main (void) {
     
@@ -15,7 +18,7 @@ int main (void) {
     
     int resultadoPesquisa;
     
-    //Talves digite o numero 7, por estar usando o DEVC++
+    //Estrutura com os dados da pesquisa e definição das palavras
     
     const struct dicionario portugues[NUMERDODEDEFINICOES] = 
     {{"pao", "Comida de farinha"},
@@ -25,33 +28,49 @@ int main (void) {
      {"queijo", "De minas"},
      {"macarronada", "Tipico de vo"},
      {"pizza", "Tipico da Italia"}};
-     
-     printf("Digite uma palavra: ");
-     scanf("%s", palavra)
-     
-     resultadoPesquisa = procurarStrings
     
-    getchar();
+    printf("Digite uma palavra: ");
+    scanf("%s", palavra);
+    
+
+    resultadoPesquisa = procurarStrings(portugues, palavra,
+                                        NUMERDODEDEFINICOES);
+                                        
+// Mensagem indicando o a 
+    
+    if(resultadoPesquisa != -1){
+        printf("A definicao de %s e: %s\n\n",palavra, portugues[resultadoPesquisa].definicao);
+    }else{
+        printf("Palavra nao encontrada!\n\n");
+    }
+    
+    //getchar não funciona.
+    
+    system("pause");
     return 0;
 }
+
+// Função comparando a string que o usuario digitou com a estrutura do programa
 
 bool compararStrings(const char palavra1[], const char palavra2[]){
      int i = 0;
      
-     while(palavra[i] == palavra[i]
-           && palavra[i] != '\0'
-           && palavra[i] != '\0' ){
+     while(palavra1[i] == palavra2[i] && palavra1[i] != '\0'
+           && palavra2[i] != '\0' ){
            
            ++i;
      }
-     if(palavra[i] == '\0' && palavra2[i] == '\0'){
+     if(palavra1[i] == '\0' && palavra2[i] == '\0'){
         return true;
      } else {
         return false;
-     
+     }
 }
 
-int procurarStrings(char const struct dicionario lingua[],
+/* Função procurando por toda a estrutura portugues e retornando valor
+do indice que encontrou a palavra ou -1 caso não econtre a palavra
+*/
+int procurarStrings(const struct dicionario lingua[],
                     const char procurar[],
                     const int numDePalavras){
    bool compararStrings(const char palavra1[], const char palavra2[]);
@@ -63,7 +82,8 @@ int procurarStrings(char const struct dicionario lingua[],
       if(compararStrings(procurar, lingua[i].palavra)) {
            return i;
       }else{
-            return -1;
+            ++i;
       }
    }
+   return -1;
 }
