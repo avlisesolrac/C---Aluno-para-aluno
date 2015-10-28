@@ -1,0 +1,21 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+    char x[100];
+    int i = 0;
+    FILE *file = fopen("MyArchive.txt", "r");
+    
+    
+    //EOF - END OF FILE
+    while ((x[i] = fgetc(file)) != EOF){
+        ++i;
+    }
+    
+    x[i] = '\0';
+    
+    printf("%s\n\n", x);
+    
+    system("pause");
+    return 0;
+}
