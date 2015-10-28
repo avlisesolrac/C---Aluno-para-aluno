@@ -1,0 +1,21 @@
+# include <stdio.h>
+//# include <stdlib.h>
+
+int main (void) {
+    
+    char y[] = "coxinha de carne";
+    
+    FILE *file = fopen("MyArchive.txt", "w");
+    
+    //stdout - saida padrão
+    int i = 0;
+    
+    
+    //pode utilar no lugar de fputc o putc que pode ser usado como MACRO.
+    while(y[i] != '\0'){
+        fputc(y[i], file);
+        ++i;
+    }
+    
+    return 0;
+}
