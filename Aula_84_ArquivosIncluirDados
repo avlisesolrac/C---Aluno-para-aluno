@@ -1,0 +1,27 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+    
+    FILE *arquivo;
+    arquivo = fopen("MyArchive.txt", "a");
+    
+    if(arquivo == NULL){
+        printf("Arquivo nao encontrado!");
+        getchar();
+        exit(1);
+    }
+
+    fprintf(arquivo, "Primeira linha\n");
+    
+    char frase[] = "Segunda Linha\n";
+    fputs(frase, arquivo);
+    
+    char caractere = '3';
+    fputc(caractere, arquivo);
+    printf("\n");
+    
+    fclose(arquivo);
+    
+    return 0;
+}
