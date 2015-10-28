@@ -1,0 +1,11 @@
+# include <stdio.h>
+
+int main(void){
+    
+    FILE *file;
+    file = fopen("MyArchive.txt", "w");
+    fprintf(file, "Teste de escrita em arquivo.");
+    fclose(file);
+
+    return 0;
+}
