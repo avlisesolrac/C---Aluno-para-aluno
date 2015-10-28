@@ -1,0 +1,13 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void) {
+    
+    char x[] = "Teste de print do puts!\n\n";
+    
+    printf("Mortdadela\n");
+    puts(x);
+
+    system("pause");  
+    return 0;
+}
