@@ -1,0 +1,30 @@
+# include <stdio.h>
+# include <stdlib.h>
+# define NUMEROMAXALUNOS 2000
+
+/*
+Se houver alteração ao inves de ser individualmente em cada linha
+do codigo, é só alterar uma unica vez no define e altera em todo
+o programa.
+*/
+
+void umaFuncao(void){
+     printf("%i\n", NUMEROMAXALUNOS);
+}
+
+void umaOutraFuncao(void){
+     printf("%i\n", NUMEROMAXALUNOS);
+}
+
+int main (void){
+    
+    void umaOutraFuncao(void);
+    void umaFuncao(void);
+    
+    printf("%i\n", NUMEROMAXALUNOS);
+    umaFuncao();
+    umaOutraFuncao();
+    
+    system("pause");
+    return 0;
+}
