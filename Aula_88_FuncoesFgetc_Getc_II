@@ -1,0 +1,30 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+    char x[100];
+    int i = 0;
+   
+   /* 
+    //Somente implementado como função
+    x[0] = fgetc(stdin);
+    
+    printf("%c\n", x[0]);
+    
+    //Pode ser implementado como função ou MACRO
+    x[0] = getc(stdin);
+    
+    printf("%c\n", x[0]);
+    */
+    
+    while ((x[i] = fgetc(stdin)) != '\n'){
+        ++i;
+    }
+    
+    x[i] = '\0';
+    
+    printf("%s\n\n", x);
+    
+    system("pause");
+    return 0;
+}
