@@ -1,0 +1,26 @@
+# include <stdio.h>
+
+int main (void){
+	
+	int vetor[3] = {1,2,3};
+	
+	int *ponteiroVet = &vetor[0];
+	printf("%p\n", *ponteiroVet);
+	
+	ponteiroVet = &vetor[1];
+	printf("%p\n", ponteiroVet);
+	
+	ponteiroVet = &vetor[2];
+	printf("%p\n", ponteiroVet);
+	
+	ponteiroVet = vetor;
+	
+	//Somando 10 ao vetor[0 + 1]
+	
+	*(ponteiroVet + 1) = 10;
+	
+	printf("%i\n", ponteiroVet[1]);
+	
+	getchar();
+	return 0;
+}
