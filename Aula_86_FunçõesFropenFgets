@@ -1,0 +1,18 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+    
+    char x[100];
+    
+    fgets(x, 100, stdin);
+    printf("%s\n\n", x);
+    
+    freopen("MyArchive.txt", "r", stdin);
+    
+    fgets(x, 100, stdin);
+    printf("%s\n\n", x);
+    
+    system("pause");
+    return 0;
+}
