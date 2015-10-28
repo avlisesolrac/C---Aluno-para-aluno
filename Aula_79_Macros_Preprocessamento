@@ -1,0 +1,19 @@
+# include <stdio.h>
+# include <stdlib.h>
+# define MAIOR(x, y) x > y ? x : y
+# define E_MINUSCULO(char) char >= 'a' && char <= 'z'
+
+int main(void){
+    
+    char x = 'a';
+    
+    if(E_MINUSCULO(x))
+        printf("Verdade! Caracter minusculo.\n");
+    else
+        printf("Falso! Caracter nao eh minusculo.\n");
+    
+    printf("%i\n", MAIOR(10, 50));
+    
+    system("pause");
+    return 0;
+}
