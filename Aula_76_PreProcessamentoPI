@@ -1,0 +1,24 @@
+# include <stdio.h>
+# include <stdlib.h>
+# define PI  3.14159
+# define NULO  0
+
+double areaCirculo(double raio){
+       return raio * raio * PI;
+}
+
+int main (void) {
+    
+    double areaCirculo(double raio);
+    
+    double varRaio;
+    
+    for(int i = 3; i != NULO; --i){    
+            printf("Digite o valor do raio: ");
+            scanf("%lf", &varRaio);
+            printf("A area do circulo eh: %lf\n", areaCirculo(varRaio));
+    }
+    
+    system("pause");
+    return 0;
+}
