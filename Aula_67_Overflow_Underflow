@@ -1,0 +1,15 @@
+# include <stdio.h>
+
+int main (void){
+	
+	//Exemplo de Overflow e Underflow.
+	
+	short x = 2147483647;
+	short y = -2147483648;
+	
+	printf("%i\n", x);
+	printf("%i\n", y);
+	
+	getchar();
+	return 0;
+}
