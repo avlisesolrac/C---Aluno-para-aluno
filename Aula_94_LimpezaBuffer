@@ -1,0 +1,49 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void) {
+	
+	char a, b, c;
+	
+	/*
+	//stdin nao pode ser usado no fflush, portanto altere para stdout
+	a = getchar();
+		fflush(stdin);
+	b = getchar();
+		fflush(stdin);
+	c = getchar();
+		fflush(stdin);
+	*/
+	
+	/*
+	//Pode apresentar falha na utilização do programa em sistema Linux.
+	
+	a = getchar();
+		setbuf(stdin, NULL);
+	b = getchar();
+		setbuf(stdin, NULL);
+	c = getchar();
+		setbuf(stdin, NULL);
+	*/
+	
+void limparBuffer(void);
+	
+	a = getchar();
+		limparBuffer();
+	b = getchar();
+		limparBuffer();
+	c = getchar();
+		limparBuffer();
+		
+	printf("%c", a);
+	printf("%c", b);
+	printf("%c\n\n", c);
+	
+	system("pause");
+	return 0;
+}
+
+void limparBuffer(void){
+	char c;
+	while((c = getchar()) != '\n' && c != EOF);
+}
