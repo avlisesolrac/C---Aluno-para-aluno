@@ -1,0 +1,25 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+	
+	char x;
+	
+	/*
+	
+	while((x[i] = getchar()) != '\n' && i < 8){
+		++i;
+	}
+	
+	x[++i] = '\0';
+	
+	printf("%s\n", x);
+	*/
+	
+	while((x = getchar()) != '\n'){
+		putchar(x);
+	}
+	
+	system("pause");
+	return 0;
+}
