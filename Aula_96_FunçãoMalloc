@@ -1,0 +1,19 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	
+	//Memory Allocation
+	//Multiplicação somente para ponteiro e o valor é o tamanho do vetor.
+	int *p = (int *) malloc(sizeof(int));
+	
+	if(p == NULL){
+		printf("Malloc nao funcionou!\n");
+	}
+	//*p = 1000;
+	
+	printf("%i\n\n", *p);
+	
+	system("pause");
+	return 0;
+}
