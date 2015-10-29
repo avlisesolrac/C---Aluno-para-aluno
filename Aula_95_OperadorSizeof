@@ -1,0 +1,24 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+// malloc, calloc, realloc, free.
+
+struct x{
+	int a;
+	double b;
+	int c;
+};
+
+
+int main (void) {
+	
+	int x[10];
+	double y;
+	
+	struct x estrutura;
+	
+	printf("%li\n", sizeof(estrutura));
+	
+	system("pause");
+	return 0;
+}
